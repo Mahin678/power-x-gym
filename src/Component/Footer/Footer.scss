@@ -1,0 +1,21 @@
+$footerTitleColor: #5fc7c7;
+.footer-home {
+	h5 {
+		color: $footerTitleColor;
+		margin-bottom: 40px;
+	}
+	h6 {
+		margin: 20px 0px;
+	}
+	background-color: #171426;
+	.footer-text {
+		span {
+			color: rgb(252, 216, 66);
+		}
+	}
+	.footer-icon {
+		span {
+			margin: 10px 5px;
+		}
+	}
+}
