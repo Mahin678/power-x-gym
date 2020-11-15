@@ -5,7 +5,7 @@ const MenuBar = () => {
 	return (
 		<nav className="navbar navbar-expand-lg ">
 			<div className="container">
-				<a className="navbar-brand bold " to="/">
+				<a className="navbar-brand bold text-light" to="/">
 					POWER <span className="footer-text"> X</span>
 				</a>
 				<button
