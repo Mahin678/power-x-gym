@@ -1,0 +1,9 @@
+.btn-schedule-custom {
+	width: 160px;
+	background-color: rgb(252, 216, 66);
+	font-weight: bold;
+	text-transform: uppercase;
+	&:hover {
+		background-color: #e6e930;
+	}
+}

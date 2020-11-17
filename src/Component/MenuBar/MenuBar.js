@@ -41,12 +41,12 @@ const MenuBar = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/">
-								Blog
+							<Link className="nav-link" to="/ourClasses">
+								Our Class
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link" to="/">
+							<Link className="nav-link" to="/pricing">
 								Pricing
 							</Link>
 						</li>

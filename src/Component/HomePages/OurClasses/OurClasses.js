@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import {
+	personalInfo,
+	purchasePackages,
+} from '../../../Redux/actions/dataActions';
 import Footer from '../../Footer/Footer';
 import OutPageMenu from '../../OutPageMenu/OutPageMenu';
 import './OurClasses.scss';
-const OurClasses = () => {
+const OurClasses = (props) => {
+	const history = useHistory();
+	const [serviceName, setServiceName] = useState({});
+	const handleGymType = (data) => {
+		history.push('/pricing');
+		serviceName.service = data;
+		props.purchasePackages(serviceName);
+	};
 	return (
 		<>
 			<OutPageMenu>
@@ -18,7 +31,9 @@ const OurClasses = () => {
 									src="https://i.imgur.com/5JNdWnW.png"
 									alt=""
 								/>
-								<button>
+								<button
+									onClick={() => handleGymType('PSYCHO TRAINING')}
+								>
 									PSYCHO TRAINING <span className="h6">🠮</span>
 								</button>
 							</div>
@@ -30,7 +45,7 @@ const OurClasses = () => {
 									src="https://i.imgur.com/OfCk3Kc.jpg"
 									alt=""
 								/>
-								<button>
+								<button onClick={() => handleGymType('SELF DEFENSE')}>
 									SELF DEFENSE <span className="h6">🠮</span>
 								</button>
 							</div>
@@ -42,7 +57,7 @@ const OurClasses = () => {
 									src="https://i.imgur.com/7fbXKQU.jpg"
 									alt=""
 								/>
-								<button>
+								<button onClick={() => handleGymType('ADVANCE GYM')}>
 									ADVANCE GYM <span className="h6">🠮</span>
 								</button>
 							</div>
@@ -54,8 +69,10 @@ const OurClasses = () => {
 									src="https://i.imgur.com/oRt3ogz.jpg"
 									alt=""
 								/>
-								<button>
-									ADVANCE GYM <span className="h6">🠮</span>
+								<button
+									onClick={() => handleGymType('CARDIO TRAINING ')}
+								>
+									CARDIO TRAINING <span className="h6">🠮</span>
 								</button>
 							</div>
 						</div>
@@ -66,8 +83,12 @@ const OurClasses = () => {
 									src="https://i.imgur.com/I2bedCk.jpg"
 									alt=""
 								/>
-								<button>
-									ADVANCE GYM <span className="h6">🠮</span>
+								<button
+									onClick={() =>
+										handleGymType('STRENGTH TRAINING     ')
+									}
+								>
+									STRENGTH TRAINING <span className="h6">🠮</span>
 								</button>
 							</div>
 						</div>
@@ -78,7 +99,7 @@ const OurClasses = () => {
 									src="https://i.imgur.com/Uia1amW.jpg"
 									alt=""
 								/>
-								<button>
+								<button onClick={handleGymType}>
 									ADVANCE GYM <span className="h6">🠮</span>
 								</button>
 							</div>
@@ -90,5 +111,15 @@ const OurClasses = () => {
 		</>
 	);
 };
+const mapStateToProps = (state) => {
+	return {
+		data: state.data,
+		packageInfo: state.package,
+	};
+};
+const mapDispatchToProps = {
+	personalInfo: personalInfo,
+	purchasePackages: purchasePackages,
+};
 
-export default OurClasses;
+export default connect(mapStateToProps, mapDispatchToProps)(OurClasses);
