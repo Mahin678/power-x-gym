@@ -5,7 +5,7 @@ const Feature = () => {
 		<section className="feature py-5">
 			<div className="container">
 				<div className="row">
-					<div className="col-lg-4">
+					<div className="col-sm-12 mt-3 col-md-6 col-lg-4">
 						<div className="custom-features1">
 							<div className="features-details">
 								<img
@@ -22,7 +22,7 @@ const Feature = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-4">
+					<div className="col-sm-12 mt-3 col-md-6 col-lg-4">
 						<div className="custom-features2">
 							<div className="features-details">
 								<img
@@ -39,7 +39,7 @@ const Feature = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-lg-4">
+					<div className="col-sm-12 mt-3 col-md-6 col-lg-4">
 						<div className="custom-features3">
 							<div className="features-details">
 								<img

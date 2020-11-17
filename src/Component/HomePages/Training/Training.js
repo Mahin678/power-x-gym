@@ -8,7 +8,7 @@ const Training = () => {
 					TRAINING <span className="text-warning">PROGRAMS</span>
 				</h1>
 				<div className="row  my-5 py-3 ">
-					<div className="col-md-6 train">
+					<div className="col-sm-12 col-md-6 mt-3 col-md-6 train">
 						<img
 							className="train-img img-fluid"
 							src="https://i.imgur.com/xclETATl.png"
@@ -18,7 +18,7 @@ const Training = () => {
 							<button className="yoga">YOGA TRAINING SESSION ➜</button>
 						</div>
 					</div>
-					<div className="col-md-6 train">
+					<div className="col-sm-12 col-md-6 mt-3 col-md-6 train">
 						<img
 							className="train-img img-fluid"
 							src="https://i.imgur.com/bRIW5o8.jpg"

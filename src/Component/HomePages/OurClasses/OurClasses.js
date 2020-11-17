@@ -24,7 +24,7 @@ const OurClasses = (props) => {
 			<section className="ourClasses">
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-4 mt-5">
+						<div className="col-sm-12 col-md-6 col-lg-4 mt-5">
 							<div className="training-card">
 								<img
 									className="img-fluid"
@@ -38,7 +38,7 @@ const OurClasses = (props) => {
 								</button>
 							</div>
 						</div>
-						<div className="col-lg-4 mt-5">
+						<div className=" col-sm-12 col-md-6  col-lg-4 mt-5">
 							<div className="training-card">
 								<img
 									className="img-fluid"
@@ -50,7 +50,7 @@ const OurClasses = (props) => {
 								</button>
 							</div>
 						</div>
-						<div className="col-lg-4 mt-5">
+						<div className=" col-sm-12 col-md-6  col-lg-4 mt-5">
 							<div className="training-card">
 								<img
 									className="img-fluid"
@@ -62,7 +62,7 @@ const OurClasses = (props) => {
 								</button>
 							</div>
 						</div>
-						<div className="col-lg-4 mt-5">
+						<div className=" col-sm-12 col-md-6  col-lg-4 mt-5">
 							<div className="training-card">
 								<img
 									className="img-fluid"
@@ -76,7 +76,7 @@ const OurClasses = (props) => {
 								</button>
 							</div>
 						</div>
-						<div className="col-lg-4 mt-5">
+						<div className="col-sm-12 col-md-6  col-lg-4 mt-5">
 							<div className="training-card">
 								<img
 									className="img-fluid"
@@ -92,7 +92,7 @@ const OurClasses = (props) => {
 								</button>
 							</div>
 						</div>
-						<div className="col-lg-4 mt-5">
+						<div className="col-sm-12 col-md-6  col-lg-4 mt-5">
 							<div className="training-card">
 								<img
 									className="img-fluid"

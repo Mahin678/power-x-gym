@@ -18,7 +18,6 @@ const ContactForm = (props) => {
 			purchasePackages(info);
 		}
 	};
-	console.log(data);
 	return (
 		<>
 			<section className="text-left m-5 ">
@@ -29,6 +28,7 @@ const ContactForm = (props) => {
 								<div className="form-group">
 									<label htmlFor="first">First Name</label>
 									<input
+										defaultValue={data.name}
 										required
 										className="form-control"
 										name="name"
@@ -43,6 +43,7 @@ const ContactForm = (props) => {
 								<div className="form-group">
 									<label htmlFor="email">Email</label>
 									<input
+										defaultValue={data.email}
 										required
 										className="form-control"
 										name="email"

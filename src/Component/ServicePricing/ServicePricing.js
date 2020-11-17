@@ -21,21 +21,7 @@ const ServicePricing = (props) => {
 			history.push('ourClasses');
 		}
 	};
-	const x = {
-		person: 'Rayhan',
-		email: 'rayhan@example.gmail',
-	};
-	const a = {
-		person: 'Abir',
-		email: 'abir@example.gmail',
-	};
 
-	const y = {
-		person: 'Sonjoy',
-		email: 'sonjoy@gmail.gmail',
-	};
-
-	const handleData = () => {};
 	return (
 		<>
 			<OutPageMenu>
@@ -54,16 +40,16 @@ const ServicePricing = (props) => {
 					</p>
 				</div>
 				<div className="row  ml-5 mx-auto">
-					<div className="col-md-4">
+					<div className="  col-sm-12 col-md-6 mt-3 col-lg-4">
 						<div className="advance-card" style={{ width: '22rem' }}>
 							<div
 								style={{ marginTop: '30px' }}
 								className="card-img-overlay text-white text-center"
 							>
 								<h4 className="card-title text-warning">
-									ADVANCED PLAN
+									BILLED MONTHLY
 								</h4>
-								<h2 style={{ fontSize: '40px' }}>BEGINNERS</h2>
+								<h3 style={{ fontSize: '30px' }}>ADVANCED PLAN</h3>
 								<h1
 									className="mb-4 text-warning"
 									style={{ fontSize: '70px' }}
@@ -76,7 +62,7 @@ const ServicePricing = (props) => {
 								<h5>✔ Outstanding</h5>
 								<h5>✔ Happy Customers</h5>
 								<button
-									onClick={() => handleService('$140')}
+									onClick={() => handleService('ADVANCED ($140)')}
 									className="btn btn-warning btn-lg mt-4"
 								>
 									<b>PURCHASE</b>
@@ -85,14 +71,16 @@ const ServicePricing = (props) => {
 						</div>
 					</div>
 
-					<div className="col-md-4">
+					<div className=" col-sm-12 col-md-6 mt-3  col-lg-4">
 						<div className="basic-card" style={{ width: '22rem' }}>
 							<div
 								style={{ marginTop: '30px' }}
 								className="card-img-overlay text-white text-center"
 							>
-								<h4 className="card-title text-warning">BASIC PLAN</h4>
-								<h2 style={{ fontSize: '40px' }}>BEGINNERS</h2>
+								<h4 className="card-title text-warning">
+									BILLED MONTHLY
+								</h4>
+								<h3 style={{ fontSize: '30px' }}>BASIC PLAN</h3>
 								<h1
 									className="mb-4 text-warning"
 									style={{ fontSize: '70px' }}
@@ -105,7 +93,7 @@ const ServicePricing = (props) => {
 								<h5>✔ Outstanding</h5>
 								<h5>✔ Happy Customers</h5>
 								<button
-									onClick={() => handleService('$120')}
+									onClick={() => handleService(' BASIC PLAN $120')}
 									className="btn btn-warning btn-lg mt-4"
 								>
 									<b>PURCHASE</b>
@@ -113,7 +101,7 @@ const ServicePricing = (props) => {
 							</div>
 						</div>
 					</div>
-					<div className="col-md-4">
+					<div className="col-sm-12 col-md-6 mt-3 col-lg-4">
 						<div className="beginner-card" style={{ width: '22rem' }}>
 							<div
 								style={{ marginTop: '30px' }}
@@ -122,7 +110,7 @@ const ServicePricing = (props) => {
 								<h4 className="card-title text-warning">
 									BILLED MONTHLY
 								</h4>
-								<h2 style={{ fontSize: '40px' }}>BEGINNERS</h2>
+								<h3 style={{ fontSize: '30px' }}>BEGINNERS</h3>
 								<h1
 									className="mb-4 text-warning"
 									style={{ fontSize: '70px' }}
@@ -135,7 +123,7 @@ const ServicePricing = (props) => {
 								<h5>✔ Outstanding</h5>
 								<h5>✔ Happy Customers</h5>
 								<button
-									onClick={() => handleService('$90')}
+									onClick={() => handleService('BEGINNERS $90')}
 									className="btn btn-warning btn-lg mt-4"
 								>
 									<b>PURCHASE</b>

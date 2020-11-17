@@ -4,12 +4,12 @@ const Objective = () => {
 	return (
 		<div>
 			<div className="ml-5">
-				<h1 className="text-center mt-5">
+				<h1 className="text-center mt-5 ">
 					<span className="text-warning">WHY</span> CHOOSE US
 				</h1>
-				<div className="row p-3 mt-5 ml-5 mr-5">
-					<div className="col-md-4">
-						<div className="card1 col mb-4 p-3">
+				<div className="row p-3  mx-auto ">
+					<div className="col-sm-12 mt-3 col-md-6 col-lg-4">
+						<div className="card1 p-3">
 							<div
 								style={{ marginTop: '100px' }}
 								className="text-center"
@@ -30,8 +30,8 @@ const Objective = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-md-4">
-						<div className="card1 col mb-4 p-3">
+					<div className="col-sm-12 mt-3 col-md-6 col-lg-4">
+						<div className="card1  p-3">
 							<div
 								style={{ marginTop: '100px' }}
 								className="text-center"
@@ -51,8 +51,8 @@ const Objective = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-md-4">
-						<div className="card1 col mb-4 p-3">
+					<div className="col-sm-12 mt-3 col-md-6 col-lg-4">
+						<div className="card1  p-3">
 							<div
 								style={{ marginTop: '130px' }}
 								className="text-center"

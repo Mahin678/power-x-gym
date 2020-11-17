@@ -22,8 +22,9 @@ const Login = (props) => {
 			.auth()
 			.signInWithPopup(provider)
 			.then(function (result) {
-				const { displayName, email } = result.user;
-				const signedInUser = { name: displayName, email };
+				console.log(result.user);
+				const { displayName, email, photoURL } = result.user;
+				const signedInUser = { name: displayName, email, photoURL };
 				const newUser = { ...signedInUser, ...data };
 				purchasePackages(newUser);
 				if (data.service) {
