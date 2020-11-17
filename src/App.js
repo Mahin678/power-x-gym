@@ -9,25 +9,30 @@ import ServicePricing from './Component/ServicePricing/ServicePricing';
 import Schedule from './Component/Schedule/Schedule';
 import Membership from './Component/Membership/Membership';
 import ContactForm from './Component/Membership/ContactForm/ContactForm';
+import Login from './Component/Login/Login';
+import PrivateRoute from './Component/Login/PrivateRoute/PrivateRoute';
 function App() {
 	return (
 		<div className="App">
 			<Router>
 				<Switch>
 					<Route path="/home">
-						<HomePages />
+						<Login />
 					</Route>
 					<Route path="/ourClasses">
 						<OurClasses />
 					</Route>
+					<PrivateRoute path="/contact">
+						<Membership />
+					</PrivateRoute>
 					<Route path="/pricing">
 						<ServicePricing />
 					</Route>
 					<Route path="/schedule">
 						<Schedule />
 					</Route>
-					<Route path="/contact">
-						<Membership />
+					<Route path="/login">
+						<Login />
 					</Route>
 					<Route path="/">
 						<HomePages />

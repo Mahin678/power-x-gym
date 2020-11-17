@@ -15,14 +15,33 @@ const ServicePricing = (props) => {
 	const handleService = (id) => {
 		data.serviceId = id;
 		purchasePackages(data);
-		history.push('contact');
+		if (data.service) {
+			history.push('contact');
+		} else {
+			history.push('ourClasses');
+		}
 	};
-	console.log(props);
+	const x = {
+		person: 'Rayhan',
+		email: 'rayhan@example.gmail',
+	};
+	const a = {
+		person: 'Abir',
+		email: 'abir@example.gmail',
+	};
+
+	const y = {
+		person: 'Sonjoy',
+		email: 'sonjoy@gmail.gmail',
+	};
+
+	const handleData = () => {};
 	return (
 		<>
 			<OutPageMenu>
 				<h1 className="display-4">PRICING PLANS</h1>
 			</OutPageMenu>
+
 			<div className="container mx-auto my-5 ">
 				<div className="text-center py-5">
 					<h2>
@@ -57,7 +76,7 @@ const ServicePricing = (props) => {
 								<h5>✔ Outstanding</h5>
 								<h5>✔ Happy Customers</h5>
 								<button
-									onClick={() => handleService(1)}
+									onClick={() => handleService('$140')}
 									className="btn btn-warning btn-lg mt-4"
 								>
 									<b>PURCHASE</b>
@@ -85,7 +104,10 @@ const ServicePricing = (props) => {
 								<h5>✔ Free Custom</h5>
 								<h5>✔ Outstanding</h5>
 								<h5>✔ Happy Customers</h5>
-								<button className="btn btn-warning btn-lg mt-4">
+								<button
+									onClick={() => handleService('$120')}
+									className="btn btn-warning btn-lg mt-4"
+								>
 									<b>PURCHASE</b>
 								</button>
 							</div>
@@ -112,7 +134,10 @@ const ServicePricing = (props) => {
 								<h5>✔ Free Custom</h5>
 								<h5>✔ Outstanding</h5>
 								<h5>✔ Happy Customers</h5>
-								<button className="btn btn-warning btn-lg mt-4">
+								<button
+									onClick={() => handleService('$90')}
+									className="btn btn-warning btn-lg mt-4"
+								>
 									<b>PURCHASE</b>
 								</button>
 							</div>

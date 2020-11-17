@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
 	useStripe,
 	useElements,
@@ -41,7 +41,7 @@ const SplitForm = (props) => {
 	const [isError, setError] = useState('');
 	const [isSuccess, setIsSuccess] = useState('');
 	const [isTrue, setIsTrue] = useState(true);
-	console.log(isTrue);
+	const [newData, setNewData] = useState({});
 	const { setPaymentId, setValues, purchasePackages, data } = props;
 	const handleSubmit = async (event) => {
 		event.preventDefault();
@@ -65,12 +65,20 @@ const SplitForm = (props) => {
 			setError(null);
 			setPaymentId(payload.paymentMethod.id);
 			setIsTrue(false);
-			const newPersonInfo = { ...data };
-			newPersonInfo.PaymentId = payload.paymentMethod.id;
-			purchasePackages(newPersonInfo);
+			data.paymentMethod = payload.paymentMethod.id;
+			purchasePackages(data);
+			fetch('https://shrouded-plains-89752.herokuapp.com/addMember', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(data),
+			})
+				.then((res) => res.json())
+				.then((result) => {
+					console.log(result);
+				});
 		}
 	};
-	console.log(data);
+
 	return (
 		<div className="SplitForm text-left ">
 			<form onSubmit={handleSubmit}>
